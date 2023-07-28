@@ -1,0 +1,30 @@
+{
+    "model_name": "sas_ni",
+    "proj_dir": "/Users/umergupta/Library/Mobile Documents/com~apple~CloudDocs/Documents/UoE/diss_exps/time/sas_ni",
+    "run_name": "ni_final",
+    "data": {
+        "dir": "/Users/umergupta/Library/Mobile Documents/com~apple~CloudDocs/Documents/UoE/diss_exps/time/data",
+        "movie_lens": "$dir/ml20m.csv",
+        "checkpoint": "/Users/umergupta/Library/Mobile Documents/com~apple~CloudDocs/Documents/UoE/diss_exps/time/sas_ni/checkpoints/ni_final/epoch=9-step=2120.ckpt"
+    },
+    "hparams": {
+        "batch_size": "128",
+        "num_blocks": "2", 
+        "hidden_dim": "50",
+        "dropout_rate": "0.2",
+        "split_prop": "0.15",
+        "split_range": "14", 
+        "pos_num": "16",
+        "l2_emb": "0.00005", 
+        "max_seq_length": "50",
+        "num_heads": "1", 
+        "k_metric": "10", 
+        "epochs": "100",
+        "lr": "0.001",
+        "weight_decay" : "0.0",
+        "save_dir": "$proj_dir/checkpoints"
+    },
+    "accelerator": "mps", 
+    "devices": 1,
+    "n_workers": 2
+}
